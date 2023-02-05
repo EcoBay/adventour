@@ -16,6 +16,7 @@
 :root {
   --fg-color: black;
   --bg-color: white;
+  --accent-color: #333333;
 
   --col1: calc(100% / 12 * 1);
   --col2: calc(100% / 12 * 2);
