@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adventour</title>
 
-    <link rel="stylesheet" href="style/master.css" />
-    <link rel="stylesheet" href="style/landing-page.css" />
+    <link rel="stylesheet" href="styles/master.css" />
+    <link rel="stylesheet" href="styles/landing-page.css" />
+
+    <script src="scripts/svg-loader.js"></script>
+    <script src="scripts/landing-page.js" defer></script>
   </head>
   <body>
     <header>
@@ -17,5 +20,23 @@
         <a href="register.html#login" class="top__signin">Sign in</a>
       </nav>
     </header>
+    <main>
+      <section class="hero container">
+        <div class="hero__text">
+          <h1 class="hero__text__heading">
+            Lorem ipsum dolor sit amet consectetur.
+          </h1>
+          <p class="hero__text__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            voluptas adipisci rem autem iusto inventore.
+          </p>
+          <button class="button">Learn more &gt;</button>
+        </div>
+        <svg-element
+          class="hero__graphics"
+          data-src="assets/images/traveling.svg"
+        />
+      </section>
+    </main>
   </body>
 </html>

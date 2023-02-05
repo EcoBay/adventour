@@ -6,9 +6,29 @@
   box-sizing: border-box;
 }
 
+[debug] * {
+  outline: 1px solid red;
+}
+[debug] svg * {
+  outline: transparent;
+}
+
 :root {
   --fg-color: black;
   --bg-color: white;
+
+  --col1: calc(100% / 12 * 1);
+  --col2: calc(100% / 12 * 2);
+  --col3: calc(100% / 12 * 3);
+  --col4: calc(100% / 12 * 4);
+  --col5: calc(100% / 12 * 5);
+  --col6: calc(100% / 12 * 6);
+  --col7: calc(100% / 12 * 7);
+  --col8: calc(100% / 12 * 8);
+  --col9: calc(100% / 12 * 9);
+  --col10: calc(100% / 12 * 10);
+  --col11: calc(100% / 12 * 11);
+  --col12: calc(100% / 12 * 12);
 }
 
 body {
@@ -16,8 +36,19 @@ body {
   font-family: Inter, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 1140px;
   margin: 0 auto;
