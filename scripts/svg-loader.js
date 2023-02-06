@@ -12,15 +12,13 @@ function loadSVG() {
       )
         return;
 
-      const TEMP_CONTAINER = document.createElement("div");
-      TEMP_CONTAINER.innerHTML = XHR_REQUEST.responseText;
-      const SVG = TEMP_CONTAINER.firstChild;
-
+      const CONTAINER = document.createElement("div");
+      CONTAINER.innerHTML = XHR_REQUEST.responseText;
       const CLASSNAMES = element.className;
-      SVG.setAttribute("class", CLASSNAMES);
+      CONTAINER.setAttribute("class", CLASSNAMES);
 
       const PARENT_ELEMENT = element.parentNode;
-      PARENT_ELEMENT.replaceChild(SVG, element);
+      PARENT_ELEMENT.replaceChild(CONTAINER, element);
     };
     XHR_REQUEST.send();
   });

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/landing-page.css" />
 
     <script src="scripts/svg-loader.js"></script>
+    <script src="scripts/visibility.js"></script>
     <script src="scripts/landing-page.js" defer></script>
   </head>
   <body>
@@ -22,7 +23,7 @@
     </header>
     <main>
       <section class="hero container">
-        <div class="hero__text">
+        <article class="hero__text text-enter is-visible">
           <h1 class="hero__text__heading">
             Lorem ipsum dolor sit amet consectetur.
           </h1>
@@ -31,7 +32,7 @@
             nihil praesentium neque incidunt dolor veniam!
           </p>
           <button class="button">Learn more &gt;</button>
-        </div>
+        </article>
         <svg-element
           class="hero__graphics"
           data-src="assets/images/traveling.svg"
@@ -95,7 +96,7 @@
           class="feature__graphics"
           data-src="assets/images/current-location.svg"
         ></svg-element>
-        <div class="feature__text">
+        <article class="feature__text text-enter is-visible">
           <h3 class="feature__text__heading">
             Find a hotel at any location nationwide
           </h3>
@@ -103,7 +104,7 @@
             With over 10,000 hotels and destination all over the Philippines to
             choose from
           </p>
-        </div>
+        </article>
       </section>
 
       <section class="feature container">
@@ -111,14 +112,14 @@
           class="feature__graphics"
           data-src="assets/images/travelers.svg"
         ></svg-element>
-        <div class="feature__text">
+        <article class="feature__text text-enter is-visible">
           <h3 class="feature__text__heading">
             Experience convenience at your fingertips
           </h3>
           <p class="feature__text__description">
             Fully featured and accessible experience for mobile and any device
           </p>
-        </div>
+        </article>
       </section>
 
       <section class="feature container">
@@ -126,7 +127,7 @@
           class="feature__graphics"
           data-src="assets/images/relaxation.svg"
         ></svg-element>
-        <div class="feature__text">
+        <article class="feature__text text-enter is-visible">
           <h3 class="feature__text__heading">
             So sit back, relax, and let us do the work
           </h3>
@@ -134,8 +135,44 @@
             Fully featured and accessible experience for mobile device
           </p>
           <button class="button">Get started</button>
-        </div>
+        </article>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo"></div>
+        <p class="footer__copyright">
+          &copy; 2023 Adventour All rights reserved
+        </p>
+        <address class="footer__address">Cagayan, Philippines</address>
+        <ul class="footer__socials">
+          <li>
+            <a href="#">
+              <svg-element
+                class="footer__socials__handle"
+                data-src="assets/images/facebook.svg"
+              ></svg-element>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg-element
+                class="footer__socials__handle"
+                data-src="assets/images/instagram.svg"
+              ></svg-element>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg-element
+                class="footer__socials__handle"
+                data-src="assets/images/twitter.svg"
+              ></svg-element>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
