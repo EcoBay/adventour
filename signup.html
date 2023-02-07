@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup | Adventour</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/master.css" />
+    <link rel="stylesheet" href="styles/signup.css" />
+
+    <script src="scripts/md5.js"></script>
+    <script src="scripts/svg-loader.js"></script>
+    <script src="scripts/signup.js" defer></script>
+  </head>
+  <body>
+    <main class="dialogue">
+      <div class="half">
+        <svg-element
+          class="graphics"
+          data-src="assets/images/sign-up.svg"
+          data-title="A poster to encourage you to join us. It's free!"
+        >
+        </svg-element>
+      </div>
+      <form action="login.html" class="form half">
+        <h3 class="form__title">Sign up</h3>
+        <label for="name">Name</label>
+        <input required type="text" name="name" id="name" />
+        <label for="password">Email</label>
+        <input required type="email" name="email" id="email" />
+        <label for="password">Password</label>
+        <input required type="password" name="password" id="password" />
+        <input type="submit" value="Sign up" />
+      </form>
+    </main>
+  </body>
+</html>
