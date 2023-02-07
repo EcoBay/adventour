@@ -380,7 +380,7 @@ body::before {
   gap: 1rem;
 }
 
-.footer__socials__handle svg {
+.footer__socials__handle {
   height: 2rem;
 }
 
