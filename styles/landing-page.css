@@ -103,29 +103,19 @@
   width: var(--col6);
 }
 
-#freepik--background-simple--inject-56 {
-  visibility: visible;
-}
-
-@media screen and (max-width: 1399px) {
-  #freepik--background-simple--inject-56 {
-    visibility: hidden;
-  }
-
-  body::before {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    width: 60%;
-    height: 100%;
-    background-image: url("../assets/images/blob-bg.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top right;
-  }
+body::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-image: url("../assets/images/blob-bg.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 @media screen and (max-width: 991px) {
@@ -174,7 +164,7 @@
 .developers__heading {
   display: block;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   text-align: center;
   font-weight: 500;
   font-size: 2.5rem;
@@ -281,6 +271,10 @@
 @media screen and (max-width: 576px) {
   .developers {
     margin-bottom: 3rem;
+  }
+
+  .developers__heading {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -396,10 +390,12 @@
   }
 }
 
+/* Animations */
+
 .text-enter :first-child {
   opacity: 0;
   transform: translateY(80%);
-  transition: 0.5s ease-out 0.2s;
+  transition: 0.5s ease-out 0.8s;
 }
 
 .text-enter.visible :first-child {
@@ -410,10 +406,29 @@
 .text-enter :not(:first-child) {
   opacity: 0;
   transform: translateY(-80%);
-  transition: 0.5s ease-out 0.8s;
+  transition: 0.5s ease-out 1.4s;
 }
 
 .text-enter.visible :not(:first-child) {
   opacity: 100%;
   transform: translateY(0);
+}
+
+@media (max-width: 991px) {
+  .text-enter :first-child {
+    transition-delay: 0s;
+  }
+
+  .text-enter :not(:first-child) {
+    transition-delay: 0.6s;
+  }
+}
+
+#freepik--Character--inject-56 {
+  opacity: 0;
+}
+
+.visible #freepik--Character--inject-56 {
+  transform-origin: center;
+  animation: 0.5s 1 forwards var(--bounce-out) 0s slideUp;
 }

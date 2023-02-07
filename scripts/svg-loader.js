@@ -1,5 +1,5 @@
 /** insert SVG into dom */
-function loadSVG() {
+function loadSVG(callback) {
   const SVG_ELEMENTS = document.querySelectorAll("svg-element");
   SVG_ELEMENTS.forEach(function (element) {
     const XHR_REQUEST = new XMLHttpRequest();
@@ -12,13 +12,17 @@ function loadSVG() {
       )
         return;
 
-      const CONTAINER = document.createElement("div");
-      CONTAINER.innerHTML = XHR_REQUEST.responseText;
+      const TEMP_CONTAINER = document.createElement("div");
+      TEMP_CONTAINER.innerHTML = XHR_REQUEST.responseText;
+      const SVG = TEMP_CONTAINER.firstChild;
+
       const CLASSNAMES = element.className;
-      CONTAINER.setAttribute("class", CLASSNAMES);
+      SVG.setAttribute("class", CLASSNAMES);
 
       const PARENT_ELEMENT = element.parentNode;
-      PARENT_ELEMENT.replaceChild(CONTAINER, element);
+      PARENT_ELEMENT.replaceChild(SVG, element);
+
+      callback(SVG);
     };
     XHR_REQUEST.send();
   });

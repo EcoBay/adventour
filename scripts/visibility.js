@@ -1,16 +1,21 @@
+const OBSERVER_OPTION = { threshold: 1.0 };
+const INTERSECTION_OBSERVER = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, OBSERVER_OPTION);
+
+function watchVisibilityElement(element) {
+  console.log(element);
+  INTERSECTION_OBSERVER.observe(element);
+}
+
 /** A function that adds a visible class to elements specified by selector */
 function watchVisibility(selector) {
-  const OBSERVER_OPTION = { threshold: 1.0 };
-  const INTERSECTION_OBSERVER = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, OBSERVER_OPTION);
-
-  const ELEMENTS = document.querySelectorAll(".is-visible");
+  const ELEMENTS = document.querySelectorAll(selector);
   ELEMENTS.forEach((element) => {
-    INTERSECTION_OBSERVER.observe(element);
+    watchVisibilityElement(element);
   });
 }

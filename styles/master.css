@@ -30,6 +30,8 @@
   --col10: calc(100% / 12 * 10);
   --col11: calc(100% / 12 * 11);
   --col12: calc(100% / 12 * 12);
+
+  --bounce-out: cubic-bezier(0.36, -0.01, 0.5, 1.38);
 }
 
 body {
@@ -78,5 +80,49 @@ p {
 @media screen and (max-width: 576px) {
   .container {
     width: 100%;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+
+@keyframes wind {
+  0% {
+    rotate: 0deg;
+  }
+
+  25% {
+    rotate: 1deg;
+  }
+
+  75% {
+    rotate: -1deg;
+  }
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(0.5rem);
+  }
+
+  40% {
+    transform: translateX(0);
+  }
+
+  60% {
+    transform: translateX(-0.5rem);
   }
 }
