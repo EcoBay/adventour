@@ -1,4 +1,4 @@
-const OBSERVER_OPTION = { threshold: 1.0 };
+const OBSERVER_OPTION = { threshold: 0.25 };
 const INTERSECTION_OBSERVER = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
