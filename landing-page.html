@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" href="styles/master.css" />
     <link rel="stylesheet" href="styles/landing-page.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
 
     <script src="scripts/svg-loader.js"></script>
     <script src="scripts/visibility.js"></script>
@@ -15,10 +20,14 @@
   <body>
     <header>
       <nav class="top container">
-        <div class="top__logo"></div>
+        <img
+          src="assets/images/logo.png"
+          alt="adventour logo"
+          class="top__logo"
+        />
         <a href="landing-page.html" class="top__title">Adventour</a>
-        <a href="register.html#signin" class="top__login">Log in</a>
-        <a href="register.html#login" class="top__signin">Sign in</a>
+        <a href="login.html" class="top__login">Log in</a>
+        <a href="singup.html" class="top__signin">Sign up</a>
       </nav>
     </header>
     <main>
@@ -134,14 +143,18 @@
           <p class="feature__text__description">
             Fully featured and accessible experience for mobile device
           </p>
-          <button class="button">Get started</button>
+          <a href="#" class="button">Get started</a>
         </article>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__logo"></div>
+        <img
+          src="assets/images/logo.png"
+          alt="adventour logo"
+          class="footer__logo"
+        />
         <p class="footer__copyright">
           &copy; 2023 Adventour All rights reserved
         </p>
@@ -164,7 +177,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="signup.html">
               <svg-element
                 class="footer__socials__handle"
                 data-src="assets/images/twitter.svg"

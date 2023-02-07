@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bahiana&family=Didact+Gothic&family=Hanalei+Fill&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 *,
 *::after,
@@ -14,9 +14,9 @@
 }
 
 :root {
-  --fg-color: black;
-  --bg-color: white;
-  --accent-color: #333333;
+  --fg-color: #2d2d2d;
+  --bg-color: #fcfcfc;
+  --accent-color: #395f1c;
 
   --col1: calc(100% / 12 * 1);
   --col2: calc(100% / 12 * 2);
@@ -36,7 +36,9 @@
 
 body {
   margin: 0px;
-  font-family: Inter, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  font-family: "Didact Gothic", "Inter", sans-serif;
 }
 
 h1,
@@ -49,6 +51,13 @@ ul,
 ol,
 p {
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bahiana", cursive;
 }
 
 .container {
@@ -95,34 +104,41 @@ p {
   }
 }
 
-@keyframes wind {
+@keyframes slideDown {
   0% {
-    rotate: 0deg;
+    opacity: 0;
+    transform: translateY(-2rem);
   }
 
-  25% {
-    rotate: 1deg;
-  }
-
-  75% {
-    rotate: -1deg;
+  100% {
+    opacity: 1;
+    transform: inherit;
   }
 }
 
-@keyframes clouds {
+@keyframes zoomIn {
   0% {
-    transform: translateX(0);
+    opacity: 0;
+    transform: scale(0.5);
   }
 
-  20% {
-    transform: translateX(0.5rem);
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
   }
 
-  40% {
-    transform: translateX(0);
+  50% {
+    transform: translateY(-0.5rem);
   }
 
-  60% {
-    transform: translateX(-0.5rem);
+  100% {
+    transform: translateY(0);
   }
 }

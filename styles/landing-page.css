@@ -1,10 +1,13 @@
 .button {
+  display: inline-block;
+  text-decoration: none;
   padding: 0.5rem;
+  border: none;
   outline: transparent;
   line-height: 1em;
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--bg-color);
+  color: white;
   background-color: var(--accent-color);
   border-radius: 0.5rem;
 }
@@ -22,10 +25,7 @@
 }
 
 .top__logo {
-  width: 3rem;
   height: 3rem;
-  background-color: var(--fg-color);
-  border-radius: 50%;
 }
 
 .top__title,
@@ -36,6 +36,8 @@
 }
 
 .top__title {
+  font-family: "Hanalei Fill", cursive;
+  color: var(--accent-color);
   font-size: 1.5rem;
   line-height: 1em;
   font-weight: 500;
@@ -58,7 +60,7 @@
 }
 
 .top__signin {
-  color: var(--bg-color);
+  color: white;
   background-color: var(--accent-color);
 }
 
@@ -158,6 +160,7 @@ body::before {
 }
 
 .developers {
+  position: relative;
   margin-bottom: 4rem;
 }
 
@@ -188,7 +191,7 @@ body::before {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: var(--bg-color);
+  background-color: white;
 }
 
 .card::before {
@@ -197,8 +200,8 @@ body::before {
   height: 100%;
   position: absolute;
   z-index: -1;
-  background-color: var(--accent-color);
-  opacity: 20%;
+  background-color: #adc38a;
+  opacity: 80%;
   top: 0;
   left: 0;
   transform: scale(1.1);
@@ -224,7 +227,7 @@ body::before {
 }
 
 .card__dev__name {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -367,10 +370,7 @@ body::before {
 }
 
 .footer__logo {
-  width: 3rem;
   height: 3rem;
-  background-color: var(--fg-color);
-  border-radius: 50%;
 }
 
 .footer__socials {
@@ -381,6 +381,7 @@ body::before {
 }
 
 .footer__socials__handle {
+  color: var(--fg-color);
   height: 2rem;
 }
 
@@ -424,11 +425,27 @@ body::before {
   }
 }
 
-#freepik--Character--inject-56 {
+#freepik--Character--inject-1--inject-142,
+#freepik--Map--inject-174,
+#freepik--Character--inject-22,
+#freepik--current-location--inject-159 {
+  transform-origin: center;
   opacity: 0;
 }
 
-.visible #freepik--Character--inject-56 {
-  transform-origin: center;
+.visible #freepik--Character--inject-22 {
   animation: 0.5s 1 forwards var(--bounce-out) 0s slideUp;
+}
+
+.visible #freepik--current-location--inject-159 {
+  animation: 0.5s 1 forwards var(--bounce-out) 0s slideDown;
+}
+
+.visible #freepik--Map--inject-174 {
+  animation: 0.5s 1 forwards var(--bounce-out) 0s zoomIn;
+}
+
+.visible #freepik--Character--inject-1--inject-142 {
+  animation: 0.5s 1 forwards var(--bounce-out) 0s slideUp,
+    1.5s Infinite linear floating 0.5s;
 }
