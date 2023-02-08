@@ -1,122 +1,57 @@
 const HOTEL_DATA = [
   {
-    title: "AJ's Riverside hotel",
-    address: "Lal-lo, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=AJ",
+    title: "Bai",
+    address: "Mandaue City, Cebu",
+    img: "assets/images/feature/bai.jpg",
   },
   {
-    title: "Eco's Malacanan of the North",
+    title: "Cesa Bocobo Hotel",
+    address: "Manila City, Metro Manila",
+    img: "assets/images/feature/casa.jpg",
+  },
+  {
+    title: "Diamond Hotel",
+    address: "Manila City, Metro Manila",
+    img: "assets/images/feature/diamond.jpeg",
+  },
+  {
+    title: "Dusit Thani Hotel",
+    address: "Makati City, Metro Manila",
+    img: "assets/images/feature/dusit.jpg",
+  },
+  {
+    title: "Eco Hotel",
     address: "Allacapan, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Eco",
+    img: "assets/images/feature/eco.jpg",
   },
   {
-    title: "Angel's Heart Apartment",
+    title: "Golden Harvest",
     address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Angel",
+    img: "assets/images/feature/golden.jpg",
   },
   {
-    title: "Standford Studio",
+    title: "Marriott Hotel",
+    address: "Pasay City, Metro Manila",
+    img: "assets/images/feature/marriott.jpg",
+  },
+  {
+    title: "Mercure Hotel",
+    address: "Pasig",
+    img: "assets/images/feature/mercure.jpg",
+  },
+  {
+    title: "Las Palmas",
     address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Standford",
+    img: "assets/images/feature/palmas.jpg",
   },
   {
-    title: "AJ's Riverside hotel",
-    address: "Lal-lo, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=AJ",
+    title: "Red Planet Hotel",
+    address: "Makati City, Metro Manila",
+    img: "assets/images/feature/red.jpg",
   },
   {
-    title: "Eco's Malacanan of the North",
-    address: "Allacapan, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Eco",
-  },
-  {
-    title: "Angel's Heart Apartment",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Angel",
-  },
-  {
-    title: "Standford Studio",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Standford",
-  },
-  {
-    title: "AJ's Riverside hotel",
-    address: "Lal-lo, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=AJ",
-  },
-  {
-    title: "Eco's Malacanan of the North",
-    address: "Allacapan, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Eco",
-  },
-  {
-    title: "Angel's Heart Apartment",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Angel",
-  },
-  {
-    title: "Standford Studio",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Standford",
-  },
-  {
-    title: "AJ's Riverside hotel",
-    address: "Lal-lo, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=AJ",
-  },
-  {
-    title: "Eco's Malacanan of the North",
-    address: "Allacapan, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Eco",
-  },
-  {
-    title: "Angel's Heart Apartment",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Angel",
-  },
-  {
-    title: "Standford Studio",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Standford",
-  },
-  {
-    title: "AJ's Riverside hotel",
-    address: "Lal-lo, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=AJ",
-  },
-  {
-    title: "Eco's Malacanan of the North",
-    address: "Allacapan, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Eco",
-  },
-  {
-    title: "Angel's Heart Apartment",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Angel",
-  },
-  {
-    title: "Standford Studio",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Standford",
-  },
-  {
-    title: "AJ's Riverside hotel",
-    address: "Lal-lo, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=AJ",
-  },
-  {
-    title: "Eco's Malacanan of the North",
-    address: "Allacapan, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Eco",
-  },
-  {
-    title: "Angel's Heart Apartment",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Angel",
-  },
-  {
-    title: "Standford Studio",
-    address: "Tuguegarao City, Cagayan",
-    img: "https://via.placeholder.com/1140x640?Text=Standford",
+    title: "Shangri-La",
+    address: "Makati City, Metro Manila",
+    img: "assets/images/feature/shangrila.jpg",
   },
 ];

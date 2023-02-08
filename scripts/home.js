@@ -9,7 +9,7 @@ const LISTING_CONTAINER = document.querySelector(".recommendation__list");
 populate(LISTING_CONTAINER, LISTING_TEMPLATE, REM_HOTEL);
 
 REM_HOTEL.sort(() => 0.5 - Math.random());
-REM_HOTEL = HOTEL_DATA.slice(0, 4);
+REM_HOTEL = REM_HOTEL.slice(0, 4);
 const RESULT_TEMPLATE = document.querySelector(".summary");
 const RESULT_CONTAINER = document.querySelector(".search__results");
 populate(RESULT_CONTAINER, RESULT_TEMPLATE, REM_HOTEL);

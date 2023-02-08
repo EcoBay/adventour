@@ -8,7 +8,7 @@ h2 {
 }
 
 section {
-  margin-bottom: 2rem !important;
+  margin-bottom: 4rem !important;
 }
 
 @media (max-width: 576px) {
@@ -155,6 +155,9 @@ section {
 }
 
 @media (max-width: 768px) {
+  section {
+    margin-bottom: 2rem !important;
+  }
   .recommendation__list {
     grid-template-columns: repeat(2, 1fr);
   }

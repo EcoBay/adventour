@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Adventour</title>
+    <title>Details | Adventour</title>
     <link
       rel="shortcut icon"
       href="assets/images/logo.png"
@@ -11,18 +11,18 @@
     />
     <link rel="stylesheet" href="styles/master.css" />
     <link rel="stylesheet" href="styles/components.css" />
-    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/details.css" />
 
     <script src="scripts/svg-loader.js"></script>
     <script src="scripts/builder.js"></script>
     <script src="scripts/data.js"></script>
     <script defer src="scripts/components.js"></script>
-    <script defer src="scripts/home.js"></script>
+    <script defer src="scripts/details.js"></script>
   </head>
   <body>
     <header>
       <nav class="navbar container">
-        <a href="landing-page.html" class="navbar__brand">
+        <a href="home.html" class="navbar__brand">
           <img
             src="assets/images/logo.png"
             alt="adventour logo"
@@ -84,29 +84,47 @@
       </nav>
     </header>
     <main>
-      <section class="featured container">
-        <h2 class="featured__heading">Featured Destinations</h2>
-        <ul class="carousel">
-          <div class="carousel__control">
-            <button class="carousel__control__selector"></button>
-            <button class="carousel__control__selector"></button>
-            <button class="carousel__control__selector"></button>
-            <button class="carousel__control__selector"></button>
+      <section class="details container">
+        <h2 class="details__heading">Listing</h2>
+        <img class="details__image image" />
+        <div class="details__booking">
+          <h3 class="details__heading__title title"></h3>
+          <address class="details__headding__location address"></address>
+          <div class="price">
+            <del class="price__original">
+              &#8369; <span id="orig-price">5000</span>
+            </del>
+            <strong class="price__discounted">
+              &#8369; <span id="orig-price">4000</span>
+            </strong>
+            <div class="price__coupon">20% off</div>
           </div>
-          <li class="carousel__item">
-            <a href="details.html" class="link">
-              <img
-                src="https://via.placeholder.com/1140x320/red"
-                class="carousel__item__image image"
-              />
-              <div class="carousel__overlay"></div>
-              <h3 class="carousel__item__heading title">Location 1</h3>
-              <address class="carousel__item__address address">
-                Tuguegarao City, Cagayan
-              </address>
+          <div class="spacer"></div>
+          <form method="post">
+            <div class="date">
+              <div class="date__in">
+                <label for="checkin">Check in</label>
+                <input type="date" name="checkin" id="checkin" />
+              </div>
+              <div class="date__out">
+                <label for="checkin">Check out</label>
+                <input type="date" name="checkout" id="checkout" />
+              </div>
+            </div>
+            <a
+              href="https://www.google.com/maps/place/Cagayan+State+University+Carig+Administration+Building/@17.6603074,121.7527621,18.37z/data=!4m6!3m5!1s0x33858f636aabf65b:0x27f70deeda1e853c!8m2!3d17.6597199!4d121.7522941!16s%2Fg%2F11c45qvzmf"
+              class="view-map"
+            >
+              <svg-element
+                class="view-map__icon"
+                data-src="assets/images/map.svg"
+                data-title="a map graphics"
+              ></svg-element>
+              View in maps
             </a>
-          </li>
-        </ul>
+            <button class="details__booking__book">Book now</button>
+          </form>
+        </div>
       </section>
 
       <section class="recomendation container">
