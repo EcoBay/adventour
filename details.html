@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Adventour</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/master.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+
+    <script src="scripts/svg-loader.js"></script>
+    <script src="scripts/builder.js"></script>
+    <script src="scripts/data.js"></script>
+    <script defer src="scripts/components.js"></script>
+    <script defer src="scripts/home.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <a href="landing-page.html" class="navbar__brand">
+          <img
+            src="assets/images/logo.png"
+            alt="adventour logo"
+            class="navbar__brand__logo"
+          />
+          <span class="navbar__brand__name">Adventour</span>
+        </a>
+
+        <div class="search">
+          <input
+            type="text"
+            class="search__box"
+            placeholder="Search location"
+            required
+          />
+          <div class="search__icon">
+            <svg-element
+              data-src="assets/images/magnifying-glass.svg"
+              data-title="magnifying glass"
+              class="lens"
+            ></svg-element>
+            <svg-element
+              data-src="assets/images/xmark.svg"
+              data-title="xmark"
+              class="xmark"
+            ></svg-element>
+          </div>
+
+          <div class="search__results">
+            <div class="search__results__tabs">
+              <button class="search__results__tabs__button active">
+                Hotels
+              </button>
+              <button class="search__results__tabs__button">Flights</button>
+              <button class="search__results__tabs__button">Restaurants</button>
+              <button class="search__results__tabs__button">
+                Vacation Package
+              </button>
+            </div>
+            <a href="details.html" class="summary link">
+              <img
+                src="https://via.placeholder.com/72/red"
+                alt="Image of "
+                class="summary__preview image"
+              />
+              <div class="summary__details">
+                <h3 class="summary__details__heading title">Location</h3>
+                <address class="summary__details__location address">
+                  Tuguegarao City, Cagayan
+                </address>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="user">
+          <div class="user__profile">A</div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="featured container">
+        <h2 class="featured__heading">Featured Destinations</h2>
+        <ul class="carousel">
+          <div class="carousel__control">
+            <button class="carousel__control__selector"></button>
+            <button class="carousel__control__selector"></button>
+            <button class="carousel__control__selector"></button>
+            <button class="carousel__control__selector"></button>
+          </div>
+          <li class="carousel__item">
+            <a href="details.html" class="link">
+              <img
+                src="https://via.placeholder.com/1140x320/red"
+                class="carousel__item__image image"
+              />
+              <div class="carousel__overlay"></div>
+              <h3 class="carousel__item__heading title">Location 1</h3>
+              <address class="carousel__item__address address">
+                Tuguegarao City, Cagayan
+              </address>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="recomendation container">
+        <h2>Traveler's Choice: Top Hotels</h2>
+        <ul class="recommendation__list">
+          <li>
+            <a href="details.html" class="listing link">
+              <img
+                src="https://via.placeholder.com/320/red"
+                alt="Image for"
+                class="listing__image image"
+              />
+              <h4 class="listing__heading title">Location 1</h4>
+              <address class="listing__location address">
+                Tuguegarao City, Cagayan
+              </address>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img
+          src="assets/images/logo.png"
+          alt="adventour logo"
+          class="footer__logo"
+        />
+        <p class="footer__copyright">
+          &copy; 2023 Adventour All rights reserved
+        </p>
+        <address class="footer__address">Cagayan, Philippines</address>
+
+        <ul class="footer__socials">
+          <li>
+            <a href="#" aria-label="Visit us on facebook">
+              <svg-element
+                class="footer__socials__handle"
+                data-src="assets/images/facebook.svg"
+                data-title="facebook logo"
+              ></svg-element>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Visit us on instagram">
+              <svg-element
+                class="footer__socials__handle"
+                data-src="assets/images/instagram.svg"
+                data-title="twitter logo"
+              ></svg-element>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Visit us on twitter">
+              <svg-element
+                class="footer__socials__handle"
+                data-src="assets/images/twitter.svg"
+                data-title="twitter logo"
+              ></svg-element>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

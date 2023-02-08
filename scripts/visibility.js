@@ -8,7 +8,6 @@ const INTERSECTION_OBSERVER = new IntersectionObserver((entries) => {
 }, OBSERVER_OPTION);
 
 function watchVisibilityElement(element) {
-  console.log(element);
   INTERSECTION_OBSERVER.observe(element);
 }
 

@@ -1,0 +1,161 @@
+main {
+  margin-top: 1rem !important;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem !important;
+}
+
+@media (max-width: 576px) {
+  .featured__heading {
+    margin-left: 1rem;
+  }
+
+  .recomendation {
+    padding: 1rem;
+  }
+}
+
+.carousel {
+  width: 100%;
+  aspect-ratio: 32 / 9;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 0;
+  list-style-type: none;
+}
+
+.carousel__overlay {
+  position: absolute;
+  inset: 0 0 0 0;
+  background: radial-gradient(
+    114.3% 170.53% at 11.89% 114.3%,
+    #1d2417 0%,
+    #1b3308 4.69%,
+    rgba(27, 51, 8, 0) 100%
+  );
+  z-index: -1;
+}
+
+.carousel__item {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.carousel__item.active {
+  display: block;
+}
+
+.carousel__item a {
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.carousel__item.active a {
+  animation: 0.5s 1 forwards var(--bounce-out) fadeIn;
+}
+
+.carousel__item__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  object-position: center;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.carousel__item__heading {
+  font-size: 56px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.carousel__item__address {
+  font-size: 24px;
+  font-style: normal;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .carousel {
+    aspect-ratio: 8 / 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    border-radius: 0;
+  }
+}
+
+.carousel__control {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.75rem;
+  display: flex;
+  gap: 0.25rem;
+  z-index: 5;
+}
+
+.carousel__control__selector {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  border: 2px solid white;
+  outline: transparent;
+  padding: 0;
+}
+
+.carousel__control__selector.active {
+  width: 1rem;
+  background-color: white;
+}
+
+.recommendation__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  .recommendation__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .recommendation__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

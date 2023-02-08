@@ -2,6 +2,9 @@
 function loadSVG(callback) {
   const SVG_ELEMENTS = document.querySelectorAll("svg-element");
   SVG_ELEMENTS.forEach(function (element) {
+    const PARENT_ELEMENT = element.parentNode;
+    const CLASSNAMES = element.className;
+
     const XHR_REQUEST = new XMLHttpRequest();
 
     XHR_REQUEST.open("GET", element.dataset.src);
@@ -9,8 +12,17 @@ function loadSVG(callback) {
       if (
         XHR_REQUEST.readyState !== XMLHttpRequest.DONE ||
         XHR_REQUEST.status !== 200
-      )
+      ) {
+        if (XHR_REQUEST.status === 0) {
+          const IMG = document.createElement("img");
+          IMG.setAttribute("src", element.dataset.src);
+          IMG.setAttribute("alt", element.dataset.title);
+          IMG.setAttribute("class", CLASSNAMES);
+          PARENT_ELEMENT.replaceChild(IMG, element);
+        }
+
         return;
+      }
 
       const TEMP_CONTAINER = document.createElement("div");
       TEMP_CONTAINER.innerHTML = XHR_REQUEST.responseText;
@@ -23,10 +35,8 @@ function loadSVG(callback) {
       TITLE.innerHTML = element.dataset.title;
       SVG.appendChild(TITLE);
 
-      const CLASSNAMES = element.className;
       SVG.setAttribute("class", CLASSNAMES);
 
-      const PARENT_ELEMENT = element.parentNode;
       PARENT_ELEMENT.replaceChild(SVG, element);
 
       if (callback) callback(SVG);
