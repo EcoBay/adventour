@@ -1,13 +1,28 @@
 const HOTEL_DATA = [
   {
-    title: "Bai",
-    address: "Mandaue City, Cebu",
-    img: "assets/images/feature/bai.jpg",
+    title: "Eco Hotel",
+    address: "Allacapan, Cagayan",
+    img: "assets/images/feature/eco.jpg",
+  },
+  {
+    title: "Mercure Hotel",
+    address: "Pasig",
+    img: "assets/images/feature/mercure.jpg",
   },
   {
     title: "Cesa Bocobo Hotel",
     address: "Manila City, Metro Manila",
     img: "assets/images/feature/casa.jpg",
+  },
+  {
+    title: "Las Palmas",
+    address: "Tuguegarao City, Cagayan",
+    img: "assets/images/feature/palmas.jpg",
+  },
+  {
+    title: "Bai",
+    address: "Mandaue City, Cebu",
+    img: "assets/images/feature/bai.jpg",
   },
   {
     title: "Diamond Hotel",
@@ -20,11 +35,6 @@ const HOTEL_DATA = [
     img: "assets/images/feature/dusit.jpg",
   },
   {
-    title: "Eco Hotel",
-    address: "Allacapan, Cagayan",
-    img: "assets/images/feature/eco.jpg",
-  },
-  {
     title: "Golden Harvest",
     address: "Tuguegarao City, Cagayan",
     img: "assets/images/feature/golden.jpg",
@@ -33,16 +43,6 @@ const HOTEL_DATA = [
     title: "Marriott Hotel",
     address: "Pasay City, Metro Manila",
     img: "assets/images/feature/marriott.jpg",
-  },
-  {
-    title: "Mercure Hotel",
-    address: "Pasig",
-    img: "assets/images/feature/mercure.jpg",
-  },
-  {
-    title: "Las Palmas",
-    address: "Tuguegarao City, Cagayan",
-    img: "assets/images/feature/palmas.jpg",
   },
   {
     title: "Red Planet Hotel",

@@ -100,6 +100,8 @@ body {
 
 .search__results {
   display: none;
+  max-height: 400px;
+  overflow: scroll;
 }
 
 .active .search__results {
@@ -116,6 +118,10 @@ body {
   border-radius: 0 0 1rem 1rem;
   border: 1px solid var(--fg-color);
   border-top: none;
+}
+
+.search__results__tabs {
+  display: none;
 }
 
 .search__results__tabs__button {
@@ -211,6 +217,7 @@ body {
   }
 
   .active .search__results {
+    max-height: 100vh;
     height: 100vh;
     padding: 1rem 2rem 2rem 2rem;
   }
