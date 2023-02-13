@@ -22,7 +22,9 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nihil
         praesentium neque incidunt dolor veniam!
       </p>
-      <button class="button">Learn more &gt;</button>
+      <button (click)="scrollTo(feature)" class="button">
+        Learn more &gt;
+      </button>
     </article>
     <svg
       width="475"
@@ -1461,7 +1463,7 @@
     </ul>
   </section>
 
-  <section class="feature container">
+  <section #feature class="feature container">
     <svg
       width="474"
       height="474"
