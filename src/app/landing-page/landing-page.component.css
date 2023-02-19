@@ -391,27 +391,27 @@
   }
 }
 
-:host >>> #freepik--Character--inject-1--inject-142,
-:host >>> #freepik--Map--inject-174,
-:host >>> #freepik--Character--inject-22,
-:host >>> #freepik--current-location--inject-159 {
+:host ::ng-deep #freepik--Character--inject-1--inject-142,
+:host ::ng-deep #freepik--Map--inject-174,
+:host ::ng-deep #freepik--Character--inject-22,
+:host ::ng-deep #freepik--current-location--inject-159 {
   transform-origin: center;
   opacity: 0;
 }
 
-:host .visible >>> #freepik--Character--inject-22 {
+:host .visible ::ng-deep #freepik--Character--inject-22 {
   animation: 0.5s 1 forwards var(--bounce-out) 0s slideUp;
 }
 
-:host .visible >>> #freepik--current-location--inject-159 {
+:host .visible ::ng-deep #freepik--current-location--inject-159 {
   animation: 0.5s 1 forwards var(--bounce-out) 0s slideDown;
 }
 
-:host .visible >>> #freepik--Map--inject-174 {
+:host .visible ::ng-deep #freepik--Map--inject-174 {
   animation: 0.5s 1 forwards var(--bounce-out) 0s zoomIn;
 }
 
-:host .visible >>> #freepik--Character--inject-1--inject-142 {
+:host .visible ::ng-deep #freepik--Character--inject-1--inject-142 {
   animation: 0.5s 1 forwards var(--bounce-out) 0s slideUp,
     1.5s Infinite linear floating 0.5s;
 }

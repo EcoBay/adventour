@@ -28,4 +28,8 @@ export class FooterComponent {
       link: 'https://twitter.com/iamannearmy',
     },
   ];
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
