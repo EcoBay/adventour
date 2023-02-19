@@ -424,27 +424,27 @@
   }
 }
 
-#freepik--Character--inject-1--inject-142,
-#freepik--Map--inject-174,
-#freepik--Character--inject-22,
-#freepik--current-location--inject-159 {
+::ng-deep #freepik--Character--inject-1--inject-142,
+::ng-deep #freepik--Map--inject-174,
+::ng-deep #freepik--Character--inject-22,
+::ng-deep #freepik--current-location--inject-159 {
   transform-origin: center;
   opacity: 0;
 }
 
-.visible #freepik--Character--inject-22 {
+::ng-deep .visible #freepik--Character--inject-22 {
   animation: 0.5s 1 forwards var(--bounce-out) 0s slideUp;
 }
 
-.visible #freepik--current-location--inject-159 {
+::ng-deep .visible #freepik--current-location--inject-159 {
   animation: 0.5s 1 forwards var(--bounce-out) 0s slideDown;
 }
 
-.visible #freepik--Map--inject-174 {
+::ng-deep .visible #freepik--Map--inject-174 {
   animation: 0.5s 1 forwards var(--bounce-out) 0s zoomIn;
 }
 
-.visible #freepik--Character--inject-1--inject-142 {
+::ng-deep .visible #freepik--Character--inject-1--inject-142 {
   animation: 0.5s 1 forwards var(--bounce-out) 0s slideUp,
     1.5s Infinite linear floating 0.5s;
 }
