@@ -20,7 +20,7 @@
   gap: 1rem;
 }
 
-.footer__socials__handle {
+.footer__socials__handle >>> svg {
   color: var(--fg-color);
   height: 2rem;
 }

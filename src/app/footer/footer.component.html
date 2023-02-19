@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="container">
+    <img
+      src="assets/images/logo.png"
+      alt="adventour logo"
+      class="footer__logo"
+    />
+    <p class="footer__copyright">&copy; 2023 Adventour All rights reserved</p>
+    <address class="footer__address">Cagayan, Philippines</address>
+    <ul class="footer__socials">
+      <li *ngFor="let social of socials">
+        <a [href]="social.link" attr.aria-label="Visit us on {{ social.name }}">
+          <fa-icon
+            [icon]="social.icon"
+            class="footer__socials__handle"
+          ></fa-icon>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
