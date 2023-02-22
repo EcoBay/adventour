@@ -1,0 +1,21 @@
+<main class="dialogue">
+  <div class="half">
+    <svg class="graphics" [appInlineSvg]="signupSVG" />
+  </div>
+  <form #form="ngForm" (ngSubmit)="signup($event, form)" class="form half">
+    <h3 class="form__title">Sign up</h3>
+    <label for="name">Name</label>
+    <input required type="text" name="name" id="name" [(ngModel)]="name" />
+    <label for="password">Email</label>
+    <input required type="email" name="email" id="email" [(ngModel)]="email" />
+    <label for="password">Password</label>
+    <input
+      required
+      type="password"
+      name="password"
+      id="password"
+      [(ngModel)]="password"
+    />
+    <input type="submit" value="Sign up" />
+  </form>
+</main>

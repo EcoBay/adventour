@@ -1,6 +1,6 @@
 <header>
   <nav class="top container">
-    <a href="landing-page.html" class="top__link">
+    <a [routerLink]="['/landing-page']" class="top__link">
       <img
         src="assets/images/logo.png"
         alt="adventour logo"
@@ -8,8 +8,8 @@
       />
       <span class="top__title">Adventour</span>
     </a>
-    <a href="login.html" class="top__login">Log in</a>
-    <a href="signup.html" class="top__signin">Sign up</a>
+    <a [routerLink]="['/login']" class="top__login">Log in</a>
+    <a [routerLink]="['/signup']" class="top__signin">Sign up</a>
   </nav>
 </header>
 <main>
@@ -135,3 +135,4 @@
     </article>
   </section>
 </main>
+<app-footer></app-footer>

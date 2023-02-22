@@ -1,0 +1,23 @@
+<main class="dialogue">
+  <div class="half">
+    <svg class="graphics" [appInlineSvg]="loginSVG" />
+  </div>
+  <form (ngSubmit)="loginUser($event)" #form="ngForm" class="form half">
+    <h3 class="form__title">Log in</h3>
+    <strong *ngIf="!isValidLogin"
+      >No match found for email and password.
+      <a [routerLink]="['/signup']">Create new account.</a>
+    </strong>
+    <label for="email">Email</label>
+    <input required type="email" name="email" id="email" [(ngModel)]="email" />
+    <label for="password">Password</label>
+    <input
+      required
+      type="password"
+      name="password"
+      id="password"
+      [(ngModel)]="password"
+    />
+    <input type="submit" value="Log in" [disabled]="!form.valid" />
+  </form>
+</main>
